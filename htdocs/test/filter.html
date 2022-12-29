@@ -1,0 +1,20 @@
+
+{% set { v : u |default } %}
+{% set { x : "Here is a String With varied Capitalization" } %}
+{% setl { lcx : x | tolower,
+          ucx : x | tolower | toupper ,
+          y   : { a : "a" } } %}
+
+
+v = u|default: %{v}<br>
+orig: %{x}<br>
+lowered: %{lcx}<br>
+lowered (encore): %{x|tolower}<br>
+lowered (encore II): %{"what The Figgity Fuck"|tolower}<br>
+lowered-then-uppered: %{ucx}<br>
+
+html filtration: %{"<bad> stuff & more <crap>"|html_escape}<br>
+json filtration: %{"\n\t\\"|json_escape}<br>
+substring: %{"abcdefgh"|substr(2,4)}<br>
+substring (encore): %{substr("abcdefgh",2,4)}<br>
+default values: %{y.b|default("hello")}, %{z|default}, %{x|default("no")}<br>

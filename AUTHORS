@@ -1,0 +1,18 @@
+Contributors
+------------
+Max Krohn (max@okws.org)
+
+Mike Nahas
+Eli Gwynn
+David Koh
++ lots of others at OkCupid
+
+Patrick Crosby, Jason Jung, Alfred Perlstein
+ - Feature development, testing, debugging
+
+Ian Rickard
+ - GCC 4.0 and Darwin Support
+
+Michael Walfish
+ - Various bugfixes and patches;
+ - output_file logic in ok.T

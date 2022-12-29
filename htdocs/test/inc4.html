@@ -1,0 +1,5 @@
+{% set { test : "XXX" } %}
+{% include ("inc5.html", 
+     { local_x : LANG, 
+       foo : "javascript:$(x).bar",
+       test : "${test}" }) %}

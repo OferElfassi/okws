@@ -1,0 +1,11 @@
+{%
+MimeTypes =   [ ["image/jpeg", "jpeg", "jpg", "jpe"],
+                ["image/gif", "gif"],
+                ["image/png", "png"],
+		["image/x-icon", "ico" ],
+                ["text/css", "css"],
+		["text/html", "html"],
+		["text/plain", "txt", "asc"],
+		["application/x-javascript", "js"]
+	      ];
+%}
